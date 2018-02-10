@@ -1,6 +1,21 @@
-<div class="jumbotron text-center">
-  <h1>On-Boarding Application</h1>
-  <p class="lead">Welcome to the On-Boarding Application by <strong>B & G Solutions</strong></p>
+<style>
+    .footer {
+       position: fixed;
+       left: 0;
+       bottom: 0;
+       width: 100%;
+       background-color:#2c3e50;
+       color: white;
+       text-align: right;
+       padding-right:220px;
+       padding-top:10px;
+    }
+    </style>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"><br><br><br><br>
+<div class="jumbotron text-center" style="border:3px solid black;">
+  <h1 style="color:black; font-family: 'Roboto' sans-serif; font-style: oblique">Highlight</h1>
+  <p class="lead">Welcome to the Highlight by <strong style="color:black">MJ Salazar</strong></p>
   <div>
     <a *ngIf="!authService.loggedIn()" routerLink="/register" class="btn btn-primary">Register</a>
     <a *ngIf="!authService.loggedIn()" routerLink="/login" class="btn btn-default">Login</a>
@@ -9,59 +24,90 @@
 </div>
 
 <div class="row">
-  <div class="col-sm-6 col-md-4">
-    <div class="thumbnail">
-      <img src="https://image.flaticon.com/icons/svg/417/417746.svg" alt="placeholder image" width="140" height="140">
+  <div class="col-sm-6 col-md-4" >
+    <div class="thumbnail" style="border:3px solid black;"><br>
+      <img src="https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/2747.png" style="width:85%;cursor:zoom-in"
+      onclick="document.getElementById('modal01').style.display='block'" alt="Generic placeholder image" width="300" height="300">
       <div class="caption">
-        <h3>Benjie</h3>
-        <p>Benavides</p>
+        <h3>Emmanuel Geneblaza</h3>
+        <p>I'm not Maue without U.</p><br>
       </div>
+      <div id="modal01" class="w3-modal" onclick="this.style.display='none'">
+          <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+          <div class="w3-modal-content w3-animate-zoom">
+            <img src="https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/2747.png" style="width:100%">
+          </div>
+        </div>
     </div>
   </div>
 
   <div class="col-sm-6 col-md-4">
-    <div class=thumbnail> <img src="https://image.flaticon.com/icons/svg/417/417746.svg" alt="Generic placeholder image" width="140" height="140">
+    <div class=thumbnail style="border:3px solid black;"><br>
+      <img src="https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/201935.png" style="width:85%;cursor:zoom-in"
+      onclick="document.getElementById('modal02').style.display='block'" alt="Generic placeholder image" width="300" height="300">
       <div class=caption>
-        <h3>Mitch</h3>
-        <p>Galutera</p>
+        <h3>Joshua Mendeja</h3>
+        <p>Don't judge my choices without understanding my reasons.</p>
       </div>
+      <div id="modal02" class="w3-modal" onclick="this.style.display='none'">
+          <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+          <div class="w3-modal-content w3-animate-zoom">
+            <img src="https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/201935.png" style="width:100%">
+          </div>
+        </div>
     </div>
   </div>
 
   <div class="col-sm-6 col-md-4">
-    <div class=thumbnail> <img src="https://image.flaticon.com/icons/svg/417/417746.svg" alt="Generic placeholder image" width="140" height="140">
+    <div class=thumbnail style="border:3px solid black;"><br>
+      <img src="https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/201565.png" style="width:85%;cursor:zoom-in"
+      onclick="document.getElementById('modal03').style.display='block'" alt="Generic placeholder image" width="300" height="300">
       <div class=caption>
-        <h3>Randy</h3>
-        <p>Lagdaan</p>
+        <h3>John Alfred Garcia</h3>
+        <p>Prove them wrong.</p><br>
       </div>
+      <div id="modal03" class="w3-modal" onclick="this.style.display='none'">
+          <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+          <div class="w3-modal-content w3-animate-zoom">
+            <img src="https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/201565.png" style="width:100%">
+          </div>
+        </div>
     </div>
   </div>
 
   <div class="col-sm-6 col-md-4">
-    <div class=thumbnail> <img src="https://image.flaticon.com/icons/svg/417/417754.svg" alt="Generic placeholder image" width="140" height="140">
-      <div class=caption>
+    <div class=thumbnail style="border:3px solid black;">
+      <img src="https://media.giphy.com/media/l41lROG1IGB97r6Ok/giphy.gif" alt="Generic placeholder image" width="400" height="400">
+      <!--<div class=caption>
+        <h3></h3>
+        <p></p>
+      </div>-->
+    </div>
+  </div>
+
+  <div class="col-sm-6 col-md-4">
+    <div class=thumbnail style="border:3px solid black;">
+      <img src="https://media.giphy.com/media/26BkNrGhy4DKnbD9u/giphy.gif" alt="Generic placeholder image" width="400" height="400">
+      <!--<div class=caption>
         <h3>Sample</h3>
         <p>Sample</p>
-      </div>
+      </div>-->
     </div>
   </div>
 
   <div class="col-sm-6 col-md-4">
-    <div class=thumbnail> <img src="https://image.flaticon.com/icons/svg/417/417768.svg" alt="Generic placeholder image" width="140" height="140">
-      <div class=caption>
-        <h3>Sample</h3>
+    <div class=thumbnail style="border:3px solid black;">
+      <img src="https://media.giphy.com/media/xTiTnm7cfuF2AicbYc/giphy.gif" alt="Generic placeholder image" width="400" height="400">
+      <!--<div class=caption>
+        <h3>Call Center</h3>
         <p>Sample</p>
-      </div>
-    </div>
-  </div>
-
-  <div class="col-sm-6 col-md-4">
-    <div class=thumbnail> <img src="https://image.flaticon.com/icons/svg/417/417764.svg" alt="Generic placeholder image" width="140" height="140">
-      <div class=caption>
-        <h3>Sample</h3>
-        <p>Sample</p>
-      </div>
+      </div>-->
     </div>
   </div>
 
 </div>
+<br><br><br><br>
+
+<div class="footer">
+    <p>© Mikhael Jastin P. Salazar. All rights reserved.</p>
+  </div>
